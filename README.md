@@ -20,6 +20,7 @@ This project is an attempt to replicate the basic functionalities of Instagram, 
 - Redis (Cache)
 - Docker
 - Firebase (for authentication and storage)
+- Bun
 
 ## 🏗️ Project Structure
 
@@ -29,13 +30,19 @@ This project is an attempt to replicate the basic functionalities of Instagram, 
 |   |   |-- Header
 |   |   |-- Post
 |   |   |-- UserProfile
-|   |-- pages
-|   |   |-- Home
-|   |   |-- Profile
-|   |-- App.js
-|   |-- index.js
+|   |-- app
+|   |   |-- page.tsx
+|   |   |-- layout.tsx
+|   |   |-- globals.css
+|   |   |-- chat
+|   |       |-- page.tsx
 |-- public
-|-- ...
+|-- LICENSE
+|-- package.json
+|-- tsconfig.json
+|-- README.md
+|-- next-env.d.ts
+|-- next.config.mjs
 ```
 
 ## 🛠️ How to Contribute
