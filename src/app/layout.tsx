@@ -10,14 +10,15 @@ export const metadata: Metadata = {
   keywords: ['Instagram', 'Clone', 'Next.js', 'Tailwind CSS'],
 }
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+interface RootLayoutProps {
+  readonly children: React.ReactNode
+}
+
+const RootLayout: React.FC<RootLayoutProps> = ({ children }) => {
   return (
     <html lang="en">
       <body className={inter.className}>{children}</body>
     </html>
   )
 }
+export default RootLayout
